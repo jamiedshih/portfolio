@@ -1,76 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamie Shih</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jamie Shih · Electrical Engineering</title>
+  <meta name="description" content="Jamie Shih — Electrical Engineering student at UC Santa Barbara working on digital VLSI, signal processing, and cleanroom fabrication.">
+  <meta property="og:title" content="Jamie Shih · Electrical Engineering">
+  <meta property="og:description" content="EE @ UCSB · Digital VLSI, signal processing, cleanroom fabrication.">
+  <meta property="og:image" content="images/jamie.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23e8894a'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' text-anchor='middle' fill='white'%3EJS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply saved theme before paint to avoid a flash
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
 </head>
 <body>
-    <header>
-        <nav>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a href="#top" class="nav__logo">Jamie Shih</a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.pdf" class="btn btn--small" target="_blank" rel="noopener">Résumé</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero wrap">
+      <div class="hero__text">
+        <p class="eyebrow">Electrical Engineering · UC Santa Barbara</p>
+        <h1>Hi, I'm Jamie. I build and study circuits, from the <em>cleanroom</em> to the <em>chip</em>.</h1>
+        <p class="lede">
+          I'm an EE student focused on <strong>digital VLSI</strong> and <strong>signal processing</strong>.
+          I work hands-on with fabrication equipment in UCSB's CNSI cleanroom, design digital
+          systems in Verilog on FPGAs, and help run a machine-learning research lab.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn">See my work</a>
+          <a href="resume.pdf" class="btn btn--ghost" target="_blank" rel="noopener">Download résumé</a>
+        </div>
+        <ul class="hero__meta">
+          <li><span class="dot dot--live"></span>Seeking Summer 2027 internships</li>
+          <li>B.S. EE, Minor in Music · June 2028</li>
+        </ul>
+      </div>
+      <figure class="hero__photo">
+        <img src="images/jamie.jpg" alt="Portrait of Jamie Shih" width="883" height="1200">
+      </figure>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section wrap">
+      <div class="section__head">
+        <p class="eyebrow">01 · About</p>
+        <h2>Engineering across the stack</h2>
+      </div>
+      <div class="about">
+        <div class="about__body">
+          <p>
+            I'm a third-year Electrical Engineering student at UCSB with a minor in Music.
+            I like working at every level of hardware. Most of my time goes to the
+            <strong>CNSI Quantum Structures cleanroom</strong>, where I keep deposition, vacuum,
+            and gas-delivery systems running, and the <strong>Geometric Intelligence Lab</strong>,
+            where I'm lab manager. I also help with undergraduate research in circuits and music cognition.
+          </p>
+          <p>
+            I'm aiming for a career in digital VLSI and signal processing / wireless communications,
+            and I'm open to any EE internship where I can learn from people who ship real hardware.
+          </p>
+        </div>
+        <dl class="facts">
+          <div><dt>Focus</dt><dd>Digital VLSI · DSP · Wireless comms</dd></div>
+          <div><dt>Currently</dt><dd>CNSI cleanroom + research labs</dd></div>
+          <div><dt>Location</dt><dd>Santa Barbara / Goleta, CA</dd></div>
+          <div><dt>Work authorization</dt><dd>U.S. citizen</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section wrap">
+      <div class="section__head">
+        <p class="eyebrow">02 · Experience</p>
+        <h2>Research &amp; work</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="job">
+          <div class="job__when">Jul 2026 – Present</div>
+          <div class="job__body">
+            <h3>Cleanroom Assistant <span>· CNSI Quantum Structures Cleanroom, UCSB</span></h3>
             <ul>
-                <li><a href="index.html">Jamie Shih</a></li>
-                <li><a href="index.html">LinkedIn</a></li>
-                <li><a href="index.html">GitHub</a></li>
-                <li><a href="#my-work">My Work</a></li>
-                <li><a href="index.html">Contact</a></li>
+              <li>Support daily operations of an ISO-class cleanroom used by university and industry researchers.</li>
+              <li>Troubleshoot and maintain vacuum, chiller, and gas-delivery systems; perform leak testing.</li>
+              <li>Program and calibrate tools, including thin-film deposition systems.</li>
+              <li>Follow and enforce hazardous gas and chemical safety procedures.</li>
             </ul>
-        </nav>
-        <div class="flex-container">
-            <img height="400px" width="300px" src="images/IMG_8878.jpg">
-            <div class="text-container">
-                <h1>Hey Friends!</h1>
-                <p>I'm Jamie. I'm a UCSB undergraduate student studying <strong>Electrical Engineering</strong> and I'm excited to share my projects with y'all.</p>
-                <a href="" class="cta-button">Follow Me on Instagram</a>
-                <a href="#my-work" class="cta-button secondary">See my Work</a>
+            <p class="tags"><span>Vacuum systems</span><span>Deposition</span><span>Leak testing</span><span>Fab safety</span></p>
+          </div>
+        </li>
 
-            </div>
-        </div>
-    </header>
+        <li class="job">
+          <div class="job__when">Sep 2026 – Present</div>
+          <div class="job__body">
+            <h3>Lab Manager <span>· Geometric Intelligence Lab, Prof. Nina Miolane</span></h3>
+            <ul>
+              <li>Coordinate lab operations, onboarding, and schedules for a machine-learning research group.</li>
+              <li>Write technical and web content; maintain servers and AI tooling used by the lab.</li>
+            </ul>
+            <p class="tags"><span>Technical writing</span><span>Servers</span><span>Operations</span></p>
+          </div>
+        </li>
 
-    <section>
-        <div class="flex-container">
-            <div class="text-container">
-                <h2> How I can help you</h2>
-                <p>I am skilled in Electronics and plan on specializing in Semiconductor and Integrated Circuits.</p>
-            </div>
-            <img width="350px" src="images/IMG_8878.jpg">
-
-        </div>
+        <li class="job">
+          <div class="job__when">Sep 2026 – Present</div>
+          <div class="job__body">
+            <h3>Research Assistant <span>· Music Cognition Lab, UCSB</span></h3>
+            <ul>
+              <li>Support behavioral and corpus studies on how people perceive music and audio.</li>
+            </ul>
+            <p class="tags"><span>Audio</span><span>Perception</span><span>R</span></p>
+          </div>
+        </li>
+        <li class="job">
+          <div class="job__when">Jun 2026 – Present</div>
+          <div class="job__body">
+            <h3>Undergraduate Researcher <span>· Circuit Design Research, UCSB ECE</span></h3>
+            <ul>
+              <li>Assist with small-signal and symbolic analysis of analog circuits using Python-based tools.</li>
+            </ul>
+            <p class="tags"><span>Analog</span><span>Python</span></p>
+          </div>
+        </li>
+      </ol>
     </section>
 
-    <section id="my-work">
-        <h2>Some of my projects</h2>
-        <div class="grid-container">
-            <img style="grid-area: img-1" src="images/IMG_8878.jpg">
-            <img style="grid-area: img-2" src="images/IMG_8878.jpg">
-            <img style="grid-area: img-3" src="images/IMG_8878.jpg">
-            <img style="grid-area: img-4" src="images/IMG_8878.jpg">
-            <img style="grid-area: img-4" src="images/IMG_8878.jpg">
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section wrap">
+      <div class="section__head">
+        <p class="eyebrow">03 · Projects</p>
+        <h2>Selected work</h2>
+        <p class="section__sub">Hardware I've designed, built, and tested. Code lives on <a href="https://github.com/jamiedshih" target="_blank" rel="noopener">GitHub</a>.</p>
+      </div>
+
+      <div class="projects">
+        <!-- Project card: to add a photo, replace the <svg> inside .card__media with
+             <img src="images/your-photo.jpg" alt="description"> -->
+        <article class="card card--feature">
+          <div class="card__media card__media--wave" aria-hidden="true">
+            <svg viewBox="0 0 400 180" preserveAspectRatio="none">
+              <g class="wave">
+                <text x="12" y="30">clk</text>
+                <path d="M60 40 h20 v-20 h20 v20 h20 v-20 h20 v20 h20 v-20 h20 v20 h20 v-20 h20 v20 h20 v-20 h20 v20 h20 v-20 h20 v20 h20 v-20 h20 v20"/>
+                <text x="12" y="80">state</text>
+                <path d="M60 70 h70 l6 10 l-6 10 h-70 M136 70 h120 l6 10 l-6 10 h-120 M262 70 h70 l6 10 l-6 10 h-70"/>
+                <text x="80" y="84" class="lbl">GREEN</text><text x="172" y="84" class="lbl">YELLOW</text><text x="282" y="84" class="lbl">RED</text>
+                <text x="12" y="130">go</text>
+                <path class="hi" d="M60 140 v-20 h76 v20 h204"/>
+              </g>
+            </svg>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Digital design · FPGA</p>
+            <h3>Traffic-Light Controller</h3>
+            <p>A synchronous traffic-light controller in Verilog, implemented on an FPGA. I designed it as a finite-state machine, compared Mealy and Moore versions, and wrote testbenches to check every state transition and timing condition in simulation before running it on the board.</p>
+            <p class="tags"><span>Verilog</span><span>FSMs</span><span>Testbenches</span><span>FPGA</span></p>
+            <!-- <a class="card__link" href="https://github.com/jamiedshih/REPO">View code →</a> -->
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media card__media--grid" aria-hidden="true">
+            <svg viewBox="0 0 400 180">
+              <g class="seg">
+                <path d="M140 40 h40 M186 46 v36 M186 98 v36 M140 140 h40 M134 98 v36 M134 46 v36 M140 90 h40"/>
+                <path d="M230 40 h40 M276 46 v36 M276 98 v36 M230 140 h40 M230 90 h40" />
+              </g>
+            </svg>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Embedded · Hardware build</p>
+            <h3>Arduino Arcade Game</h3>
+            <p>A handheld game built from scratch: C++ firmware on an Arduino, a 7-segment score display, an addressable LED strip, hand-soldered wiring, and a 3D-printed enclosure.</p>
+            <p class="tags"><span>C++</span><span>Arduino</span><span>Soldering</span><span>3D printing</span></p>
+          </div>
+        </article>
+
+
+        <article class="card">
+          <div class="card__media card__media--pcb" aria-hidden="true">
+            <svg viewBox="0 0 400 180">
+              <rect x="110" y="30" width="180" height="120" rx="8" class="board"/>
+              <path class="trace" d="M140 60 h60 v30 h60 M140 120 h40 v-30 M260 60 v60 h-40"/>
+              <circle cx="140" cy="60" r="6"/><circle cx="140" cy="120" r="6"/><circle cx="260" cy="60" r="6"/><circle cx="220" cy="120" r="6"/>
+            </svg>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">IEEE UCSB · PCB</p>
+            <h3>PCB Builds</h3>
+            <p>Schematic capture and board layout in KiCad, then assembly and bring-up as part of IEEE UCSB's hands-on hardware projects.</p>
+            <p class="tags"><span>KiCad</span><span>PCB design</span><span>Soldering</span></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section wrap">
+      <div class="section__head">
+        <p class="eyebrow">04 · Skills</p>
+        <h2>Toolbox</h2>
+      </div>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <p class="chips"><span>Verilog</span><span>Python</span><span>C++</span><span>Java</span><span>MATLAB</span><span>R</span></p>
         </div>
-        <a href="" class="cta-button">More on my Insta</a>
+        <div class="skill-group">
+          <h3>EDA &amp; design tools</h3>
+          <p class="chips"><span>LTspice</span><span>KiCad</span><span>AutoCAD</span><span>FPGA toolchains</span><span>Arduino</span><span>Git / GitHub</span></p>
+        </div>
+        <div class="skill-group">
+          <h3>Lab &amp; fab</h3>
+          <p class="chips"><span>Cleanroom protocol</span><span>Vacuum systems</span><span>Thin-film deposition</span><span>Leak testing</span><span>Tool calibration</span><span>Soldering</span><span>PCB assembly</span></p>
+        </div>
+      </div>
     </section>
-    
-    <section>
-        <h2>Common Questions</h2>
-        <details>
-            <summary>What are your interests?</summary>
-            <p>Creative editing, design, and building. I love Star Wars and I hope to channel that interest into my designs.</p>
-        </details>
-        <details>
-            <summary>What fields do you want to specialize in?</summary>
-            <p>I love design and building, so probably engineering design. I also have an interest in integrated circuitry and photonics.</p>
-        </details>
-        <details>
-            <summary>Favorite project?</summary>
-            <p>Not a project but I spend a lot of time editing, and learning how to tweak the velocity, effects, changing the audio, has been my most consistent and favorite hobby of mine.</p>
-        </details>
+
+    <!-- ============ EDUCATION + LEADERSHIP ============ -->
+    <section id="education" class="section wrap">
+      <div class="two-col">
+        <div>
+          <div class="section__head">
+            <p class="eyebrow">05 · Education</p>
+            <h2>UC Santa Barbara</h2>
+          </div>
+          <div class="edu">
+            <p class="edu__degree">B.S. Electrical Engineering<br><span>Minor in Music</span></p>
+            <p class="edu__when">Sep 2024 – Jun 2028 (expected)</p>
+            <!-- Add your GPA here if ≥ 3.3, e.g. <p class="edu__when">GPA 3.x</p> -->
+            <p class="edu__label">Relevant coursework</p>
+            <!-- Edit this list to match the courses you've finished -->
+            <p class="chips chips--quiet"><span>Digital Design</span><span>Circuits</span><span>Signals &amp; Systems</span><span>Programming</span></p>
+          </div>
+        </div>
+        <div>
+          <div class="section__head">
+            <p class="eyebrow">06 · Leadership</p>
+            <h2>Community</h2>
+          </div>
+          <ul class="lead">
+            <li><strong>Resident Assistant</strong><span>Community-building and support for a residence hall of 600+ students.</span></li>
+            <li><strong>STEM Tutor &amp; Robotics Camp Instructor</strong><span>Taught Python, C++, and Arduino to young students.</span></li>
+            <li><strong>IEEE UCSB</strong><span>Member; PCB design and hardware build projects.</span></li>
+            <li><strong>Girls Who Code</strong><span>Volunteer mentor for girls learning to code.</span></li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <footer>
-        <a href="">LinkedIn</a>
-        <a href="#my-work">My Work</a>
-        <a href="mailto:jamiedaphneshih@gmail.com">Contact</a>
-    </footer>
+
+    <!-- ============ BEYOND ============ -->
+    <section class="section wrap">
+      <div class="section__head">
+        <p class="eyebrow">07 · Beyond the lab</p>
+        <h2>A few more things about me</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Why a Music minor?</summary>
+          <p>Music and signal processing are closer than they look. Audio is where I first got curious about filters and frequency response, and my work in the Music Cognition Lab keeps me thinking about how people actually hear signals.</p>
+        </details>
+        <details>
+          <summary>What do you do for fun?</summary>
+          <p>Video editing is my most consistent hobby: tweaking velocity, effects, and audio until a clip feels right. I'm also a big Star Wars fan, and I like channeling that into the things I design and build.</p>
+        </details>
+        <details>
+          <summary>What are you looking for next?</summary>
+          <p>Summer 2027 internships in digital design, verification, signal processing, semiconductor process/equipment, or test engineering. I'm also open to part-time roles in the Santa Barbara / Goleta area during the school year.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section wrap contact">
+      <p class="eyebrow">08 · Contact</p>
+      <h2>Let's talk hardware.</h2>
+      <p class="section__sub">I'm always happy to chat about internships, research, or circuits in general.</p>
+      <div class="contact__links">
+        <a class="btn" href="mailto:jamieshih@ucsb.edu">jamieshih@ucsb.edu</a>
+        <!-- TODO: replace with your LinkedIn profile URL -->
+        <a class="btn btn--ghost" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn--ghost" href="https://github.com/jamiedshih" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <p>© <span id="year">2026</span> Jamie Shih</p>
+    <p><a href="#top">Back to top ↑</a></p>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const toggle = document.querySelector('.nav__toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      links.classList.remove('open'); toggle.setAttribute('aria-expanded', false);
+    }));
+
+    // Theme toggle
+    document.querySelector('.theme-toggle').addEventListener('click', () => {
+      const root = document.documentElement;
+      const isDark = root.dataset.theme ? root.dataset.theme === 'dark'
+        : matchMedia('(prefers-color-scheme: dark)').matches;
+      root.dataset.theme = isDark ? 'light' : 'dark';
+      try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+    });
+
+    // Reveal on scroll
+    const io = 'IntersectionObserver' in window && new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.section, .card, .job').forEach(el => {
+      if (io) { el.classList.add('reveal'); io.observe(el); }
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
