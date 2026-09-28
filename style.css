@@ -3,16 +3,16 @@
    Colors are tokens: edit them here to re-theme the whole site.
    ========================================================== */
 :root {
-  --bg: #faf7f2;
+  --bg: #f8f7fb;
   --surface: #ffffff;
-  --surface-2: #f3eee6;
-  --text: #1d1b19;
-  --muted: #6b645c;
-  --line: #e6dfd4;
-  --accent: #d9713a;        /* warm orange (from your original palette) */
-  --accent-2: #6f6fe0;      /* periwinkle (from your original palette) */
-  --accent-soft: #fbe7d9;
-  --shadow: 0 1px 2px rgba(40, 30, 20, .04), 0 8px 24px rgba(40, 30, 20, .06);
+  --surface-2: #efedf6;
+  --text: #1b1a22;
+  --muted: #625f70;
+  --line: #e3e0ec;
+  --accent: #6c4ccf;        /* purple */
+  --accent-2: #3f7fd6;      /* cool blue, secondary */
+  --accent-soft: #ebe5fb;
+  --shadow: 0 1px 2px rgba(30, 20, 60, .05), 0 8px 24px rgba(30, 20, 60, .07);
 
   --serif: 'Fraunces', Georgia, serif;
   --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -23,16 +23,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #141312; --surface: #1c1b19; --surface-2: #242220; --text: #f1ece5;
-    --muted: #a39b91; --line: #2f2c29; --accent: #f0935c; --accent-2: #9c9cf5;
-    --accent-soft: #3a2619; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+    --bg: #121118; --surface: #1a1922; --surface-2: #23212d; --text: #eeecf5;
+    --muted: #a19db3; --line: #2e2b3a; --accent: #a98cf6; --accent-2: #7eaaf0;
+    --accent-soft: #2b2342; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #141312; --surface: #1c1b19; --surface-2: #242220; --text: #f1ece5;
-  --muted: #a39b91; --line: #2f2c29; --accent: #f0935c; --accent-2: #9c9cf5;
-  --accent-soft: #3a2619; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  --bg: #121118; --surface: #1a1922; --surface-2: #23212d; --text: #eeecf5;
+  --muted: #a19db3; --line: #2e2b3a; --accent: #a98cf6; --accent-2: #7eaaf0;
+  --accent-soft: #2b2342; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
   color-scheme: dark;
 }
 
