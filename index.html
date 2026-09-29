@@ -161,7 +161,7 @@
       <div class="section__head">
         <p class="eyebrow">03 · Projects</p>
         <h2>Selected work</h2>
-        <p class="section__sub">Hardware I've designed, built, and tested. Code lives on <a href="https://github.com/jamiexshih" target="_blank" rel="noopener">GitHub</a>.</p>
+        <p class="section__sub">Hardware I've designed, built, and tested, plus a few creative projects. Code lives on <a href="https://github.com/jamiexshih" target="_blank" rel="noopener">GitHub</a>.</p>
       </div>
 
       <div class="projects">
@@ -187,6 +187,36 @@
             <p>A synchronous traffic-light controller in Verilog, implemented on an FPGA. I designed it as a finite-state machine, compared Mealy and Moore versions, and wrote testbenches to check every state transition and timing condition in simulation before running it on the board.</p>
             <p class="tags"><span>Verilog</span><span>FSMs</span><span>Testbenches</span><span>FPGA</span></p>
             <!-- <a class="card__link" href="https://github.com/jamiexshih/REPO">View code →</a> -->
+          </div>
+        </article>
+
+        <article class="card card--feature card--reverse">
+          <!-- To show a video here, replace the <svg> with:
+               <video src="videos/lightshow.mp4" poster="images/lightshow.jpg" autoplay muted loop playsinline></video> -->
+          <div class="card__media card__media--stage" aria-hidden="true">
+            <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice">
+              <g class="beams">
+                <path class="b1" d="M60 0 L10 220 H130 Z"/>
+                <path class="b2" d="M160 0 L110 220 H230 Z"/>
+                <path class="b3" d="M250 0 L200 220 H320 Z"/>
+                <path class="b4" d="M345 0 L290 220 H400 Z"/>
+              </g>
+              <g class="fixtures">
+                <rect x="45" y="0" width="30" height="12" rx="3"/><rect x="145" y="0" width="30" height="12" rx="3"/>
+                <rect x="235" y="0" width="30" height="12" rx="3"/><rect x="330" y="0" width="30" height="12" rx="3"/>
+              </g>
+              <g class="dmx">
+                <text x="16" y="206">DMX 001–004</text>
+              </g>
+            </svg>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Lighting design · DMX</p>
+            <h3>Lights on Greenmoor</h3>
+            <!-- Check this description and add details: how many fixtures/channels, how long each show runs, how many shows. -->
+            <p>A light show I program and run using DMXIS software and DMX lighting fixtures. I build each look and sequence cue by cue, then time the lights to the music.</p>
+            <p class="tags"><span>DMXIS</span><span>DMX512</span><span>Lighting fixtures</span><span>Show programming</span></p>
+            <p class="card__links"><a class="card__link" href="https://www.facebook.com/p/Lights-on-Greenmoor-100088419817607/" target="_blank" rel="noopener">See the shows on Facebook ↗</a></p>
           </div>
         </article>
 
@@ -224,6 +254,39 @@
           </div>
         </article>
       </div>
+
+      <article class="card card--wide">
+        <div class="card__body">
+          <p class="card__kicker">Creative · Video</p>
+          <h3>Video Editing</h3>
+          <p>Music-driven edits where I tune speed ramps, transitions, effects, and audio until every cut lands on the beat. Previews are muted; click one to watch the full edit with sound.</p>
+          <p class="tags"><span>Speed ramping</span><span>Effects</span><span>Audio sync</span><span>Color</span></p>
+          <div class="reels">
+            <a class="reel" href="https://drive.google.com/drive/folders/1jq04JlApje48uS0ROZpuoHfHJ_nG6YZg?usp=sharing" target="_blank" rel="noopener">
+              <video muted loop playsinline preload="none" poster="images/edit-guilty-as-sin.jpg" aria-label="Preview of my Guilty as Sin edit">
+                <source src="videos/edit-guilty-as-sin.mp4" type="video/mp4">
+              </video>
+              <span class="reel__cap"><strong>Guilty as Sin</strong><span>Star Wars</span></span>
+              <span class="reel__play">▶ Watch with sound</span>
+            </a>
+            <a class="reel" href="https://drive.google.com/drive/folders/1jq04JlApje48uS0ROZpuoHfHJ_nG6YZg?usp=sharing" target="_blank" rel="noopener">
+              <video muted loop playsinline preload="none" poster="images/edit-no-surprises.jpg" aria-label="Preview of my No Surprises edit">
+                <source src="videos/edit-no-surprises.mp4" type="video/mp4">
+              </video>
+              <span class="reel__cap"><strong>No Surprises</strong><span>Star Wars</span></span>
+              <span class="reel__play">▶ Watch with sound</span>
+            </a>
+            <a class="reel" href="https://drive.google.com/drive/folders/1jq04JlApje48uS0ROZpuoHfHJ_nG6YZg?usp=sharing" target="_blank" rel="noopener">
+              <video muted loop playsinline preload="none" poster="images/edit-fake-plastic-trees.jpg" aria-label="Preview of my Fake Plastic Trees edit">
+                <source src="videos/edit-fake-plastic-trees.mp4" type="video/mp4">
+              </video>
+              <span class="reel__cap"><strong>Fake Plastic Trees</strong><span>The Maze Runner</span></span>
+              <span class="reel__play">▶ Watch with sound</span>
+            </a>
+          </div>
+          <p class="card__links"><a class="card__link" href="https://drive.google.com/drive/folders/1jq04JlApje48uS0ROZpuoHfHJ_nG6YZg?usp=sharing" target="_blank" rel="noopener">See all my edits on Google Drive ↗</a></p>
+        </div>
+      </article>
     </section>
 
     <!-- ============ SKILLS ============ -->
@@ -293,7 +356,7 @@
         </details>
         <details>
           <summary>What do you do for fun?</summary>
-          <p>Video editing is my most consistent hobby: tweaking velocity, effects, and audio until a clip feels right. I'm also a big Star Wars fan, and I like channeling that into the things I design and build.</p>
+          <p>Video editing is my most consistent hobby: tweaking velocity, effects, and audio until a clip feels right (<a href="https://drive.google.com/drive/folders/1jq04JlApje48uS0ROZpuoHfHJ_nG6YZg?usp=sharing" target="_blank" rel="noopener">see some of my edits</a>). I also program and run the <a href="https://www.facebook.com/p/Lights-on-Greenmoor-100088419817607/" target="_blank" rel="noopener">Lights on Greenmoor</a> light show. I'm also a big Star Wars fan, and I like channeling that into the things I design and build.</p>
         </details>
         <details>
           <summary>What are you looking for next?</summary>
@@ -349,6 +412,16 @@
     document.querySelectorAll('.section, .card, .job').forEach(el => {
       if (io) { el.classList.add('reveal'); io.observe(el); }
     });
+
+    // Play video previews only while they're on screen (and not for reduced-motion users)
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduce && 'IntersectionObserver' in window) {
+      const vio = new IntersectionObserver(entries => entries.forEach(e => {
+        const v = e.target;
+        if (e.isIntersecting) { v.preload = 'auto'; v.play().catch(() => {}); } else { v.pause(); }
+      }), { threshold: 0.35 });
+      document.querySelectorAll('.reel video').forEach(v => vio.observe(v));
+    }
 
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
